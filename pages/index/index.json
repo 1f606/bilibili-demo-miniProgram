@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "BiliHeader": "../../components/BiliHeader/BiliHeader"
+  }
+}

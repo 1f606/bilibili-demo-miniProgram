@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="index">
+	<BiliHeader></BiliHeader>
+</view>
+<view>
+	<scroll-view class="scrollCon" scroll-x="true" enable-flex>
+		<view data-index="{{item.id}}" bindtap="activeScrollItem" class="scroll-item {{index === curNavIndex ? 'active' : ''}}" wx:for="{{navList}}" wx:key="id">{{item.text}}</view>
+	</scroll-view>
+</view>
+<swiper>
+	<swiper-item wx:for="{{swiperList}}" wx:key="index">
+		<navigator>
+			<image mode="aspectFit" src="{{item.imgSrc}}"></image>
+		</navigator>
+	</swiper-item>
+</swiper>
+<view class="videoCon">
+	<navigator url="../detail/detail?id={{item.id}}" wx:for="{{videoList}}" wx:key="index">
+		<view class="video">
+			<view class="imgCon">
+				<image src="{{item.imgSrc}}"></image>
+				<view class="video_desc">
+					<view class="iconfont iconbofang">{{item.playCount}}</view>
+					<view class="iconfont iconpinglun">{{item.commentCount}}</view>
+				</view>
+			</view>
+			<view class="video_title">{{item.desc}}</view>
+		</view>
+	</navigator>
+</view>

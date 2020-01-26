@@ -1,0 +1,105 @@
+/* pages/detail/detail.wxss */
+@import '../../assets/font/iconfont.wxss';
+
+.videoCon {
+  width: 100%;
+  height: 400rpx;
+}
+.videoCon video {
+  width: 100%;
+  height: 100%;
+}
+.titleElip {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.text {
+  flex: 1;
+}
+.iconxiajiantou {
+  height: 30rpx;
+  width: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30rpx;
+}
+
+.iconshangjiantou {
+  height: 30rpx;
+  width: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30rpx;
+}
+
+.videoDesc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.videoDesc text:not(:first-of-type) {
+  margin-left: 20rpx;
+}
+
+.oneLineEllip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.reVideoItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160rpx;
+  margin: 20rpx 0;
+}
+.reVideoItem image {
+  width: 250rpx;
+  height: 100%;
+}
+.reVideoTextCon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.reVideoTextCon view {
+  color: gray;
+  font-size: 30rpx;
+}
+
+.reTitle {
+  color: pink;
+}
+
+.commentTitle {
+  margin: 20rpx 0;
+}
+.commentItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.commentItem image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.commentTextCon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20rpx;
+}
+.commentNameTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+}

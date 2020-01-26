@@ -1,0 +1,52 @@
+@import '../../assets/font/iconfont.wxss';
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70rpx;
+  width: 100%;
+}
+.iconbilibili {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  color: rgb(237, 169, 181)
+}
+.header_icons {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  color: rgb(237, 169, 181)
+}
+.iconsousuo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  color: rgb(237, 169, 181)
+}
+.icontouxiang {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: rgb(237, 169, 181)
+}
+.header_download {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx;
+  color: #fff;
+  background-color: rgb(237, 169, 181);
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}

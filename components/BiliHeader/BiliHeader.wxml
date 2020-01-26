@@ -1,0 +1,8 @@
+<view class="header">
+	<i class="iconfont iconbilibili"></i>
+	<view class="header_icons">
+		<i class="icon iconfont iconsousuo"></i>
+		<i class="iconfont icontouxiang"></i>
+		<view class="header_download">下載app</view>
+	</view>
+</view>

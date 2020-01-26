@@ -1,0 +1,43 @@
+<view>
+	<BiliHeader></BiliHeader>
+	<view class="videoCon">
+		<video src="videoInfo.videoSrc"></video>
+	</view>
+	<view class="videoTextCon">
+		<view class="titleElip">
+			<text class="{{oneLineEllip ? 'oneLineEllip' : ''}}">{{videoInfo.videoTitle}}</text>
+			<icon bindtap="showFullTitle" class="iconfont {{oneLineEllip ? 'iconshangjiantou' : 'iconxiajiantou'}}"></icon>
+		</view>
+		<view class="videoDesc">
+			<text>{{videoInfo.author}}</text>
+			<text>{{videoInfo.playCount}}次观看</text>
+			<text>{{videoInfo.commentCount}}弹幕</text>
+			<text>{{videoInfo.date}}</text>
+		</view>
+	</view>
+	<view class="reVideoList">
+		<view class="reVideoItem" wx:for="{{recommendVideoList}}" wx:key="index">
+			<image mode="widthFix" src="{{item.imgSrc}}"></image>
+			<view class="reVideoTextCon">
+				<text class="reTitle">{{item.title}}</text>
+				<view>
+					<text>{{item.playMsg}}万次观看</text>
+					<text>{{item.commentCount}}弹幕</text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="commentCon">
+		<text class="commentTitle">评论{{commentList.length}}条</text>
+		<view class="commentItem" wx:for="{{commentList}}" wx:key="index">
+			<image src="{{item.userIconSrc}}"></image>
+			<view class="commentTextCon">
+				<view class="commentNameTime">
+					<text>{{item.username}}</text>
+					<text>{{item.commentDate}}</text>
+				</view>
+				<text class="commentContent">{{item.commentInfo}}</text>
+			</view>
+		</view>
+	</view>
+</view>
